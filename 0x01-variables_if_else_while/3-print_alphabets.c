@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	int ch, uc
+	int ch, uc;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++;)
 	{
 		putchar(ch);
 	}
-	for (uc = 'A'; uc <= 'Z'; uc++)
+	for (uc = 'A'; uc <= 'Z'; uc++;)
 	{
 		putchar(uc);
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
