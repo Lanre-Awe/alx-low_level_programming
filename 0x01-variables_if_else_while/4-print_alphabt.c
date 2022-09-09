@@ -11,10 +11,8 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch == 'q')
-			ch = '';
-		else if (ch == 'e')
-			ch = '';
+		if (ch == 'e' || ch == 'q')
+			removechar(ch);
 		putchar(ch);
 
 	}
