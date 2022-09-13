@@ -3,7 +3,8 @@
 /**
  * _islower - prints 1 if c is lowercased or 0 otherwise
  *
- * Return: 1 or 0 
+ * @c: first parameter
+ * Return: 1 or 0
  */
 int _islower(int c)
 {
