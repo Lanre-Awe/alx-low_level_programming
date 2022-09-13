@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -9,7 +10,7 @@
 int main(void)
 {
 	char ch = '_putchar';
-	putchar(ch);
-	putchar('/n')
+	_putchar(ch);
+	_putchar('/n')
 	return (0);
 }
