@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - prints 1 if lowercased or 0 otherwise
+ * _islower - prints 1 if c is lowercased or 0 otherwise
  *
- * Return: 1 or 0
+ * Return: 1 or 0 
  */
 int _islower(int c)
 {
@@ -17,5 +17,5 @@ int _islower(int c)
 	{
 		i = 0;
 	}
-	return i;
+	return (i);
 }
