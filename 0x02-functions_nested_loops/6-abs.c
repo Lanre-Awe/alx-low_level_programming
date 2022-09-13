@@ -2,19 +2,19 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @int: type int 
+ * @i: type int 
  *
- * Return: the abolute value of int
+ * Return: the abolute value of @i
  */
 
-int _abs(int)
+int _abs(int i)
 {
-	if (int < 0)
+	if (i < 0)
 	{
-		return (int * -1);
+		return (i * -1);
 	}
 	else
 	{
-		return int;
+		return i;
 	}
 }
