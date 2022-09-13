@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - prints + if n is greter than 0, 0 if n is 0 and - if n is less than 0
+ * print_sign - prints + if n is greter than 0, 0 if n is 0 or -1 otherwise
  * @n: type int character
  *
  * Return: 1, 0 and -1
