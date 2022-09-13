@@ -13,25 +13,19 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		i = 1;
-
 		_putchar('+');
-
 		return (i);
 	}
 	else if (n == 0)
 	{
 		i = 0;
-
 		_putchar('0');
-
 		return (i);
 	}
 	else
 	{
 		i = -1;
-
 		_putchar('-');
-
 		return (i);
 	}
 }
