@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @i: type int 
+ * @i: type int
  *
  * Return: the abolute value of @i
  */
@@ -15,6 +15,6 @@ int _abs(int i)
 	}
 	else
 	{
-		return i;
+		return (i);
 	}
 }
