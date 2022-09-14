@@ -9,7 +9,7 @@
 int main(void)
 {
 	int x, y, z;
-	
+
 	y = 1024;
 	z = 0;
 
@@ -24,9 +24,5 @@ int main(void)
 			continue;
 		}
 	}
-	printf("%d", z);
-	printf("\n");
-
-	return(0);
-}
-	
+	return (0);
+}	

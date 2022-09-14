@@ -16,12 +16,13 @@ int main(void)
 
 	for (i = 1; i <= 33; ++i)
 	{
-		if (a < 4000000 && (j % 2) == 0)
+		if (a < 4000000 && (a % 2) == 0)
 		{
-			sum = sum + j;
+			sum = sum + a;
 		}
-		next = j + k;
-		j = k;
-		k = next;
+		next = a + b;
+		a = b;
+		b = next;
 	}
+	return (0);
 }

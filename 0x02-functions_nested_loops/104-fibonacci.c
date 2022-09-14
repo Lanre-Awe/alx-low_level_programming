@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%lu", b);
 
-	for (i = 1; i < 91; i ++)
+	for (a = 1; a < 91; a ++)
 	{
 		printf(", %lu", c);
 		c += b;
@@ -26,7 +26,7 @@ int main(void)
 	c1 = c / 1000000000;
 	c2 = c % 1000000000;
 
-	for (i = 92; i < 99; ++i)
+	for (a = 92; a < 99; ++a)
 	{
 		printf(", %lu", c1 + (c2 / 1000000000));
 		printf("%lu", c2 % 1000000000);
@@ -37,6 +37,6 @@ int main(void)
 	}
 	printf("\n");
 
-	return (0)
+	return (0);
 }
 
