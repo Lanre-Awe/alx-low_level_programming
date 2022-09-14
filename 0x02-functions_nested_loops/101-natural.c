@@ -9,7 +9,7 @@
 int main(void)
 {
 	int x, y, z;
-
+	
 	y = 1024;
 	z = 0;
 
