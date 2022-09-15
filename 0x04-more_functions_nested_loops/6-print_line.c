@@ -2,8 +2,8 @@
 
 /**
  * print_line - prints a straight line in the terminal
- * Return: void
  * @n: type int
+ * Return: void
  */
 void print_line(int n)
 {
