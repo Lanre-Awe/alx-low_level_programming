@@ -1,5 +1,5 @@
 #ifndef FILE_MAIN
-#define FILE_main
+#define FILE_MAIN
 
 int _putchar(char c);
 int _isupper(int c);
