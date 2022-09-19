@@ -6,7 +6,7 @@
  * Return: void
  */
 
-_puts(char *str)
+void _puts(char *str)
 {
 	printf("%s", str);
 }
