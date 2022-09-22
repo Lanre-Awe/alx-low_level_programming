@@ -11,7 +11,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
  * @r: type char
  * @r_index: type int
  * 
- * Return: if r cannot store (0)
+ * Return: if r cannot store 0
  */
 
 char *add_strings(char *n1, char *n2, char *r, int r_index)
@@ -49,6 +49,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	}
 	else if (j && r_index < 0)
 		return (0);
+
 	return (r + r_index + 1);
 }
 
@@ -72,6 +73,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	for (index = 0; *(n2 + index); index++)
 		n2_len++;
+
 	if (size_r <= n1_len + 1 || size_r <= n2_len + 1)
 		return (0);
 
