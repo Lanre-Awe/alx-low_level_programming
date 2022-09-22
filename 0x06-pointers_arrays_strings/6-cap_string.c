@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalizes all word of a string
  * @s: type char
- * Return: s
+ * Return: the string
  */
 
 char *cap_string(char *s)
@@ -11,7 +11,6 @@ char *cap_string(char *s)
 	int a, b;
 
 	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
@@ -31,6 +30,5 @@ char *cap_string(char *s)
 			}
 		}
 	}
-
 	return (s);
 }
