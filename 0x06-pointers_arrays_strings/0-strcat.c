@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - appends two string together
+ * _strcat - appends two string together
  * @dest: type char
  * @src: type char
  * Return: a pointer to the resulting string
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	b = 0;
 
 	while (dest[a] != '\0')
-		i++;
+		a++;
 
 	while (src[b] != '\0')
 	{
