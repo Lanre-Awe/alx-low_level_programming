@@ -3,8 +3,7 @@
 /**
  * cap_string - capitalizes all word of a string
  * @s: type char
- *
- * Return: the string
+ * Return: s
  */
 char *cap_string(char *s)
 {
@@ -15,7 +14,9 @@ char *cap_string(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+		{
 			s[i] -= 32;
+		}
 		for (j = 0; j < 13; j++)
 		{
 			if (s[i] == spc[j])
@@ -27,6 +28,5 @@ char *cap_string(char *s)
 			}
 		}
 	}
-
 	return (s);
 }
