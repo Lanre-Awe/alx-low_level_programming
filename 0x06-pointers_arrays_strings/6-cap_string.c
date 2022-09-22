@@ -5,27 +5,26 @@
  * @s: type char
  * Return: the string
  */
-
 char *cap_string(char *s)
 {
-	int a, b;
+	int i, j;
 
 	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (a = 0; s[a] != '\0'; a++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (a == 0 && s[a] >= 'a' && s[a] <= 'z')
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 		{
-			s[a] -= 32;
+			s[i] -= 32;
 		}
 
-		for (b = 0; b < 13; b++)
+		for (j = 0; j < 13; j++)
 		{
-			if (s[a] == sep[b])
+			if (s[i] == sep[j])
 			{
-				if (s[a + 1] >= 'a' && s[a + 1] <= 'z')
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
-					s[a + 1] -= 32;
+					s[i + 1] -= 32;
 				}
 			}
 		}
