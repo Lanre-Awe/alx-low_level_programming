@@ -19,7 +19,7 @@ char *cap_string(char *s)
 			s[a] -= 32;
 		for (b = 0; b < 13; b++)
 		{
-			if (s[a] == spe[b])
+			if (s[a] == sep[b])
 			{
 				if (s[a + 1] >= 'a' && s[a + 1] <= 'z')
 				{
