@@ -12,7 +12,7 @@ void print_byte(char *c, int s, int l)
 {
 	int j, k;
 
-	for(j = 0; j <= 9; j++)
+	for (j = 0; j <= 9; j++)
 	{
 		if (j <= s)
 			printf("%02x", c[l * 10 + j]);
