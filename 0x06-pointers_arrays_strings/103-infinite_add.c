@@ -1,85 +1,80 @@
 #include "main.h"
 
-char *add_strings(char *n1, char *n2, char *r, int r_index);
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
-
 /**
- * add_strings - add two numbers
- * @n1: type char
- * @n2: type char
- * @r: type char
- * @r_index: type int
- * 
- * Return: if r cannot store 0
+ * rev_string - reverse array
+ * @n: type char
+ *
+ * Return: 0 (always)
  */
 
-char *add_strings(char *n1, char *n2, char *r, int r_index)
+void rev_string(char *n)
 {
-	int i, j;
+	int i = 0;
+	int j = 0;
+	char tmp;
 
-	j = 0;
-
-	for (; *n1 && *n2; n1--, n2--, r_index--)
+	while (*(n + 1) != '\0')
 	{
-		i = (*n1 - '0') + (*n2 - '0');
-		i += j;
-		*(r + r_index) = (i % 10) + '0';
-		j = i / 10;
+		i++;
 	}
+	i--;
 
-	for (; *n1; n1--, r_index--)
+	for (j = 0; j < i; j++, i--)
 	{
-		i = (*n1 - '0') + j;
-		*(r + r_index) = (i % 10) + '0';
-		j = i / 10;
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = tmp;
 	}
-
-	for (; *n2; n2--, r_index--)
-	{
-		i = (*n2 - '0') + j;
-		*(r + r_index) = (i % 10) + '0';
-		j = i / 10;
-	}
-
-	if (j && r_index >= 0)
-	{
-		*(r + r_index) = (j % 10) + '0';
-		return (r + r_index);
-	}
-	else if (j && r_index < 0)
-		return (0);
-
-	return (r + r_index + 1);
 }
 
 /**
- * infinite_add - add two numbers
- * @n: type char
+ * infinite_add - adds two number
+ * @n1: type char
  * @n2: type char
  * @r: type char
  * @size_r: type int
  *
- * Return: if r cannot store 0
- *
+ * Return: pointer
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int index, n1_len = 0, n2_len = 0;
+	int ovf = 0, i = 0, j = 0, digits = 0;
+	int val1 = 0, val2 = 0, tmp_tot = 0;
 
-	for (index = 0; *(n1 + index); index++)
-		n1_len++;
-
-	for (index = 0; *(n2 + index); index++)
-		n2_len++;
-
-	if (size_r <= n1_len + 1 || size_r <= n2_len + 1)
+	while (*(n1 + i) != '\0')
+		i++;
+	while (*(n2 + j) != '\0')
+		j++;
+	i--;
+	j--;
+	if (j >= size_r || i >= sire_r)
 		return (0);
-
-	n1 += n1_len - 1;
-	n2 += n2_len - 1;
-	*(r + size_r) = '\0';
-
-	return (add_strings(n1, n2, r, --size_r));
+	while (j >= 0 || i >= 0 || ovf == 1)
+	{
+		if (i < 0)
+			val1 = 0;
+		else
+			val1 = *(n1 + i) - '0';
+		if (j < 0)
+			val2 = 0;
+		else
+			val2 = *(n2 + j) - '0';
+		tmp_tot = val1 + val2 + ovf;
+		if (temp_tot >= 10)
+			ovf = 1;
+		else
+			ovf = 0;
+		if (digits >= (size_r - 1))
+			return (0);
+		*(r + digits) = (tmp_tot % 10) + '0';
+		digits++;
+		j--;
+		i--;
+	}
+	if (digits == size_r)
+		return (0);
+	*(r + digits) = '\0';
+	rev_string(r);
+	return (r);
 }
