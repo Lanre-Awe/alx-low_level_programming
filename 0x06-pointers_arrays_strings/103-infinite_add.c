@@ -61,7 +61,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			val2 = *(n2 + j) - '0';
 		tmp_tot = val1 + val2 + ovf;
-		if (temp_tot >= 10)
+		if (tmp_tot >= 10)
 			ovf = 1;
 		else
 			ovf = 0;
