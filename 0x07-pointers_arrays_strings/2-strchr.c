@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strchr - locates a character in a string
  * @s: type char
  * @c: type char
+ * Return: a pointer or NULL
  */
 
 char *_strchr(char *s, char c)
