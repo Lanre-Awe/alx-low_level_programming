@@ -6,7 +6,7 @@
  * @s: type char
  * @accept: type char
  *
- * Retun: pointers to bytes
+ * Return: pointers to bytes
  */
 
 char *_strpbrk(char *s, char *accept)
