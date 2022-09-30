@@ -9,21 +9,9 @@
  * Return: always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
-
-	if (argc >= 0)
-	{
-		for (i = 0; i < argc; i++)
-		{
-			if (i = 0)
-			{
-				_putchar(*argv[i]);
-				_putchar('\n');
-			}
-		}
-	}
+	printf("%s\n", *argv);
 
 	return (0);
-}
+}	
