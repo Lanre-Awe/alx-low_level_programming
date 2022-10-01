@@ -2,26 +2,33 @@
 #include <stdlib.h>
 
 /**
- * main - multiplies two numbers
- * @argc: number of arguement
- * @argv: arguments
- * Return: error , 1 or 0
+ * main - multiply two numbers followed by a new line
+ * @argc: Argument count
+ * @argv: argument vector,an array of pointer pointing to
+ * a string.
+ *
+ * Return: returns 0.
  */
-
 int main(int argc, char *argv[])
 {
-	int j = 1;
+	long int mul;
 
-	if (argc < 2)
+	int i;
+
+	mul = 1;
+
+	if (argc > 1 && argc == 3)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			mul *= atoi(argv[i]);
+		}
+		printf("%li\n", mul);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	for (int i = 1; i <= argc; i++)
-	{
-		j *= atoi(argv[i]);
-	}
-	printf("%d", j);
 	return (0);
 }
