@@ -5,7 +5,6 @@
 /**
  * sum_them_all  a function that returns the sum of all its parameters
  * @n: a constant of type unsigned int
- * @...: ellipsis
  * Return: sum of all its parameters
  */
 
@@ -21,11 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i == 0)
-		{
-			return (0);
-		}
-		sum += va_arg(ap, int)
+		sum += va_arg(ap, int);
 	}
 	va_end(ap);
 
