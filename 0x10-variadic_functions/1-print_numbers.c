@@ -15,11 +15,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_list ap;
 
-	for (i = 0; i <= n; i = va_arg(ap, unsigned int))
+	for (i = 0; i < n; i++)
 	{
 		if (*separator == NULL)
 			return (0);
-		printf("%u""%c", i , *separator);
+		printf("%u""%c", va_arg(ap, unsigned int, *separator);
 	}
 	va_end(ap);
 	_putchar("\n");
